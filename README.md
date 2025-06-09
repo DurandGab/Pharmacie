@@ -1,33 +1,83 @@
-<<<<<<< HEAD
-# Pharmacie Durand Gabin
+💊 Gestion de Pharmacie - Application Vue.js
+Cette application web permet de gérer les médicaments d’une pharmacie : visualisation, ajout, modification, suppression, tri, recherche, et export PDF.
 
-This template should help get you started developing with Vue 3 in Vite.
+🚀 Fonctionnalités principales
+✅ Afficher la liste des médicaments d'une pharmacie
 
-## Recommended IDE Setup
+➕ Ajouter un nouveau médicament
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+✏️ Modifier un médicament existant
 
-## Customize configuration
+❌ Supprimer un médicament
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+🔍 Rechercher un médicament par nom
 
-## Project Setup
+🔃 Trier par quantité, nom ou forme pharmaceutique
 
-```sh
+📄 Télécharger la liste des médicaments en PDF
+
+🛠️ Technologies utilisées
+Vue 3
+
+Bootstrap (Bootswatch Brite Theme)
+
+jsPDF & jspdf-autotable
+
+API REST publique : apipharmacie.pecatte.fr
+
+📦 Installation
+Clonez le dépôt :
+
+bash
+Copier
+Modifier
+git clone https://github.com/votre-utilisateur/gestion-pharmacie.git
+cd gestion-pharmacie
+Installez les dépendances :
+
+bash
+Copier
+Modifier
 npm install
-```
+Lancez l'application en développement :
 
-### Compile and Hot-Reload for Development
-
-```sh
+bash
+Copier
+Modifier
 npm run dev
-```
+Accédez à l'application sur http://localhost:5173 (ou un autre port indiqué).
 
-### Compile and Minify for Production
+📁 Structure des composants
+App.vue : Point d'entrée de l'application
 
-```sh
-npm run build
-```
-=======
-# Pharmacie
->>>>>>> 82558fe930e132c924ddea33c512914bfa8008b4
+components/MedicamentList.vue : Composant principal contenant la logique métier
+
+components/MedicamentItem.vue : Affichage d'un médicament individuel
+
+components/FormAddMedicament.vue : Formulaire d'ajout
+
+components/FormSearchMedicament.vue : Formulaire de recherche
+
+components/FormChangeMedicament.vue : Formulaire de modification
+
+Class/Medicament.js : Classe définissant le modèle Médicament
+
+🔗 API utilisée
+Base URL : https://apipharmacie.pecatte.fr/api
+
+ID de la pharmacie utilisée : 3
+
+Points d’accès :
+
+GET /api/3/medicaments : Liste des médicaments
+
+GET /api/3/medicaments/:id : Détail d’un médicament
+
+POST /api/3/medicaments : Ajouter un médicament
+
+PUT /api/3/medicaments : Modifier un médicament
+
+DELETE /api/3/medicaments/:id : Supprimer un médicament
+
+📄 Export PDF
+Un bouton permet de générer un fichier PDF contenant la liste actuelle des médicaments affichés.

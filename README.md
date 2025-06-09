@@ -23,8 +23,8 @@ Cette application web permet de gérer les médicaments d’une pharmacie : visu
 
 - jsPDF & jspdf-autotable
 
-- API REST publique : apipharmacie.pecatte.fr
-
+- API REST publique
+  
 📁 Structure des composants
 App.vue : Point d'entrée de l'application
 
@@ -39,3 +39,9 @@ App.vue : Point d'entrée de l'application
 - components/FormChangeMedicament.vue : Formulaire de modification
 
 - Class/Medicament.js : Classe définissant le modèle Médicament
+
+🚩 Explicaattion du graphe d'architecture de l'application : 
+
+L’application s’articule autour du composant MedicamentList, qui centralise les états et interactions.
+Chaque composant enfant (formulaire, recherche, item, modification) émet des événements (@event) pour déclencher les mises à jour d’état ou d’API.
+L’état global listeMedicaments est mis à jour dynamiquement suite aux actions utilisateurs (ajout, suppression, recherche, modification).

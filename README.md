@@ -17,25 +17,25 @@ Cette application web permet de gérer les médicaments d’une pharmacie : visu
 📄 Télécharger la liste des médicaments en PDF
 
 🛠️ Technologies utilisées
-Vue 3
+- Vue 3
 
-Bootstrap (Bootswatch Brite Theme)
+- Bootstrap (Bootswatch Brite Theme)
 
-jsPDF & jspdf-autotable
+- jsPDF & jspdf-autotable
 
-API REST publique : apipharmacie.pecatte.fr
+- API REST publique : apipharmacie.pecatte.fr
 
 📁 Structure des composants
 App.vue : Point d'entrée de l'application
 
-components/MedicamentList.vue : Composant principal contenant la logique métier
+- components/MedicamentList.vue : Composant principal contenant la logique métier
 
-components/MedicamentItem.vue : Affichage d'un médicament individuel
+- components/MedicamentItem.vue : Affichage d'un médicament individuel
 
-components/FormAddMedicament.vue : Formulaire d'ajout
+- components/FormAddMedicament.vue : Formulaire d'ajout
 
-components/FormSearchMedicament.vue : Formulaire de recherche
+- components/FormSearchMedicament.vue : Formulaire de recherche
 
-components/FormChangeMedicament.vue : Formulaire de modification
+- components/FormChangeMedicament.vue : Formulaire de modification
 
-Class/Medicament.js : Classe définissant le modèle Médicament
+- Class/Medicament.js : Classe définissant le modèle Médicament

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pharmacie Durand Gabin
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# Pharmacie
+>>>>>>> 82558fe930e132c924ddea33c512914bfa8008b4

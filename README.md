@@ -39,6 +39,3 @@ components/FormSearchMedicament.vue : Formulaire de recherche
 components/FormChangeMedicament.vue : Formulaire de modification
 
 Class/Medicament.js : Classe définissant le modèle Médicament
-
-📄 Export PDF
-Un bouton permet de générer un fichier PDF contenant la liste actuelle des médicaments affichés.
